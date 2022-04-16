@@ -1,5 +1,5 @@
 {
-  "name": "pnb-locales-helper",
+	"name": "pnb-locales-helper",
 	"displayName": "locales-helper",
 	"description": "Locales Helper is an extension to create/add/edit/manage language translation inside Visual Studio Code",
 	"version": "0.0.1",
@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:pnbLocalesHelper.sayHello"
+		"onView:pnbLocalesHelper"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -22,12 +22,12 @@
 		],
 		"views": {
 			"explorer": [
-			  {
-				"id": "pnbLocalesHelper",
-				"name": "Locales Helper"
-			  }
+				{
+					"id": "pnbLocalesHelper",
+					"name": "Locales Helper"
+				}
 			]
-		  }
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
