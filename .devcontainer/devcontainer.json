@@ -1,0 +1,7 @@
+{
+  "name": "locale-helper",
+  "build": {"dockerfile": "dockerfile"},
+  "extensions": ["dbaeumer.vscode-eslint"],
+  "remoteUser": "node",
+  "workspaceFolder": "/workspaces/locales-helper"
+}

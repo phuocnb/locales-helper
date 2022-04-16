@@ -1,0 +1,60 @@
+{
+  "name": "locales-helper",
+  "displayName": "Locales Helper",
+  "version": "1.0.0",
+  "publisher": "phuocnb",
+  "description": "Locales Helper is an extension to create/add/edit/manage language translation inside Visual Studio Code",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuocnb/locales-helper.git"
+  },
+  "engines": {
+    "vscode": "^1.62.1"
+  },
+  "activationEvents": [
+    "onCommand:pnbLocalesHelper.sayHello"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pnbLocalesHelper.sayHello",
+        "title": "Hello Locales"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "pnbLocalesHelper",
+          "name": "Locales Helper"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "locales",
+    "multilaguage",
+    "helper",
+    "extension"
+  ],
+  "author": "phuocnb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phuocnb/locales-helper/issues"
+  },
+  "homepage": "https://github.com/phuocnb/locales-helper#readme",
+  "devDependencies": {
+    "@types/node": "^8.10.25",
+    "@types/vscode": "^1.51.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
